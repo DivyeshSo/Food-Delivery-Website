@@ -1,0 +1,76 @@
+.container{
+    margin-top: 10px;
+    width:auto;
+    height:100px;
+    top: 0;
+    position: sticky;
+}
+.navbar{
+    height: 70px;
+    margin-top: 10px;
+    position:sticky;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(255, 181, 181, 0.723);
+    top: 1;
+}
+.sticky-top{
+    max-height: 45px;
+}
+.sticky-top{
+    padding: 20px 0;
+}
+.logo{
+    color: tomato;
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+.btn-tbl{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 102, 0);
+    border-radius: 30px;
+    margin-left: 35px;
+    margin-right: 10px;
+    border-radius: 40%;
+}
+/* .btn-tbl:hover{
+    background-color: tomato;
+    color: #ffffff;
+} */
+.login-btn{
+    background-color: rgb(255, 135, 135);
+    border: 1px solid rgb(255, 102, 0);
+    width: 7vw;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-menu{
+    gap: 40px;
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    transition: 0.5s ;
+    position: relative;
+}
+.navbar-menu:hover{
+    color: rgb(0, 0, 0);
+    background-color: tomato;
+    border-radius: 10px;
+}
+.cart{
+    margin-left: 35px;
+    bottom: 25px;
+}
+.search{
+    margin-left: 10px;
+}
+.dot{
+    background-color: tomato;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}

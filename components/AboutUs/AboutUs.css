@@ -1,0 +1,200 @@
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-top:10px;
+}
+.con-detaile{
+    margin-top: 40px;
+}
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: 10px;
+    background: var(--primary);
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: 10px;
+    background: tomato;
+}
+.section-title.text-start::before,
+.section-title.text-end::after {
+    display: none;
+}
+
+.ab-img-2{
+    margin-top: 25%;
+}
+.container-detail{
+    background-color: rgba(168, 75, 255, 0.593);
+    backdrop-filter: blur(10px);
+    width: 35vw;
+    height: auto;
+    display: grid;
+    align-items: center;    
+    justify-content: center;
+    border-radius: 10px;
+}
+.button-ab{
+    border: none;
+    background-color: tomato;
+    color: rgb(255, 255, 255);
+    height: 5vh;
+    width: 11vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.button-ab:hover{
+    box-sizing: border-box;
+    box-shadow: 15px 10px 10px rgba(255, 238, 0, 0.744);
+}
+.hr-ab{
+    margin: 10px 0px;
+    height: 2.5px;
+    background-color: #000000;
+    border: none;
+    top: 10px;
+    /* position: relative; */
+}
+.animat{
+    animation: zoomIn 1s ease-in-out;
+}
+/* Base styles for the layout */
+.container-xxl {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: left;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.service-container {
+    font-size: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.25rem;
+}
+
+.container-detail {
+    padding: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.border-primary {
+    border-color: #007bff !important;
+}
+
+/* Responsive styles */
+@media (max-width: 1199.98px) { /* Large screens and tablets */
+    .service-container {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 991.98px) { /* Tablets */
+    .container-xxl {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-container {
+        font-size: 1.75rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) { /* Mobile phones */
+    .container{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        width: auto;
+        height: 20vh;
+        margin-left: 35px;
+    }
+    .container-detail{
+        height: fit-content;
+        width:70vw;
+        text-align: center;
+    }
+    hr{
+        margin-top: 275%;
+        margin-bottom: auto;
+    }
+    .service-container {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 0.875rem;
+    }
+    .text-center{
+        margin-top: 25px;
+    }
+    .col-lg-6{
+        margin-top: 10px;
+    }
+    .col-lg-6 img{
+        height: auto;
+        width: auto;
+    }
+    .btn-primary,.button-ab {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .text-start, .text-end {
+        text-align: center;
+    }
+
+    .col-lg-6 {
+        margin-bottom: 1rem;
+    }
+}
+

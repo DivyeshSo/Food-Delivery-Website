@@ -1,0 +1,92 @@
+/*** Section Title ***/
+.container-service{
+    height: 30vh;
+}
+.container-xl{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: tomato;
+}
+
+.section-title.text-start::before,
+.section-title.text-end::after {
+    display: none;
+}
+
+
+/*** Service ***/
+.secion-title{
+    font-weight: 600;
+    font-size: 50px;
+    color: tomato;
+}
+.service-container{
+    font-weight: 500;
+    font-size: 68px;
+    font-style: italic;
+    text-transform: inherit;
+    text-shadow: 3px 3px 6px tomato;
+}
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+    background-color: rgba(224, 194, 251, 0.921);
+}
+.service-item:hover {
+    background: tomato;
+    box-shadow: 10px 5px 5px 0px rgba(255, 227, 48, 0.795);
+    border-radius: 10px;
+}
+.service-item * {
+    transition: .5s;
+}
+.service-item:hover * {
+    color: var(--light) !important;
+}
+.icon-img{
+    color: tomato;
+}
+.hr-ser{
+    margin: 10px 0px;
+    margin-top:25px auto;
+    height: 2px;
+    background-color: #000000;
+    border: none;
+    position: relative;
+    display: none;
+}
+@media(max-width:750px){
+    .container-service{
+        margin-bottom: 20%;
+        width: 35px auto;
+        height:40px;
+    }
+    .container-xl{
+        height: 180vh;
+    }
+}
